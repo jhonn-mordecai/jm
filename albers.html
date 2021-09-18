@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albers</title>
+    <style>
+        * {box-sizing:border-box;}
+
+        body, html {
+            height:100%;
+            margin:0;
+        }
+        body {
+            padding:0.5rem;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            font-family:Helvetica,sans-serif;
+            background: rgb(255,255,255);
+            background: linear-gradient(301deg, rgba(255,255,255,1) 0%, rgba(249,249,249,1) 100%);
+        }
+
+        main {
+            display:grid;
+            grid-template-columns:repeat(27, 27px);
+            grid-template-rows:repeat(28, 27px);
+            padding:2.8rem 7rem;
+            background-color:#f7f7f7;
+            border:25px solid black;
+            box-shadow:4px 10px 22px #bbb;
+        }
+
+        .bg-black {background-color:#13171A;}
+        .bg-red {background-color:#f8a597;}
+        .bg-white {background-color:#f7f7f7;}
+
+        .red-1 {grid-column:1;grid-row:2 / 27;}
+        .red-2 {grid-column:3;grid-row:2 / 27;}
+        .red-3, .red-4, .red-5, .red-6, .red-7, .red-8, .red-11, .red-12 {
+            grid-column: 7 / 20;
+        }
+        .red-3 {grid-row:6;}
+        .red-4 {grid-row:8;}
+        .red-5 {grid-row:10;}
+        .red-6 {grid-row:12;}
+        .red-7 {grid-row:14;}
+        .red-8 {grid-row:16;}
+        .red-9 {grid-column: 7 / -1;grid-row:18;}
+        .red-10 {grid-column: 7 / -1;grid-row:20;}
+        .red-11 {grid-row:22;}
+        .red-12 {grid-row:24;}
+        .red-13 {grid-column: 16 / 20; grid-row:26;}
+        .red-14 {grid-column: 16 / 20; grid-row:28;}
+
+        .black-1 {grid-column:6;grid-row:1;}
+        .black-2 {grid-column:6;grid-row:3;}
+        .black-3 {grid-column:6;grid-row:5;}
+        .black-4, .black-9, .black-10, .black-11, .black-12 {
+            grid-column:6 / 16;
+        }
+        .black-4 {grid-row:7;}
+        .black-5, .black-6, .black-7, .black-8 {
+            grid-column:2 / 16;
+        }
+        .black-5 {grid-row:9;}
+        .black-6 {grid-row:11;}
+        .black-7 {grid-row:13;}
+        .black-8 {grid-row:15;}
+        .black-9 {grid-row:17;}
+        .black-10 {grid-row:19;}
+        .black-11 {grid-row:21;}
+        .black-12 {grid-row:23;}
+        .black-13, .black-14, .black-15, .black-16 {
+            grid-row:3 / 17;
+        }
+        .black-13 {grid-column:21;}
+        .black-14 {grid-column:23;}
+        .black-15 {grid-column:25;}
+        .black-16 {grid-column:27;}
+        .black-17, .black-18, .black-19, .black-20 {
+            grid-row:19;
+        }
+        .black-21, .black-22, .black-23, .black-24 {
+            grid-row:21;
+        }
+        .black-17, .black-21 {grid-column:21;}
+        .black-18, .black-22 {grid-column:23;}
+        .black-19, .black-23 {grid-column:25;}
+        .black-20, .black-24 {grid-column:27;}
+
+        .bg-white {grid-row:10 / 25;z-index:1;}
+        .white-line-1 {grid-column:8;}
+        .white-line-2 {grid-column:10;}
+        .white-line-3 {grid-column:12;}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="bg-red red-1"></div>
+        <div class="bg-red red-2"></div>
+        <div class="bg-red red-3"></div>
+        <div class="bg-red red-4"></div>
+        <div class="bg-red red-5"></div>
+        <div class="bg-red red-6"></div>
+        <div class="bg-red red-7"></div>
+        <div class="bg-red red-8"></div>
+        <div class="bg-red red-9"></div>
+        <div class="bg-red red-10"></div>
+        <div class="bg-red red-11"></div>
+        <div class="bg-red red-12"></div>
+        <div class="bg-red red-13"></div>
+        <div class="bg-red red-14"></div>
+        <div class="bg-black black-1"></div>
+        <div class="bg-black black-2"></div>
+        <div class="bg-black black-3"></div>
+        <div class="bg-black black-4"></div>
+        <div class="bg-black black-5"></div>
+        <div class="bg-black black-6"></div>
+        <div class="bg-black black-7"></div>
+        <div class="bg-black black-8"></div>
+        <div class="bg-black black-9"></div>
+        <div class="bg-black black-10"></div>
+        <div class="bg-black black-11"></div>
+        <div class="bg-black black-12"></div>
+        <div class="bg-black black-13"></div>
+        <div class="bg-black black-14"></div>
+        <div class="bg-black black-15"></div>
+        <div class="bg-black black-16"></div>
+        <div class="bg-black black-17"></div>
+        <div class="bg-black black-18"></div>
+        <div class="bg-black black-19"></div>
+        <div class="bg-black black-20"></div>
+        <div class="bg-black black-21"></div>
+        <div class="bg-black black-22"></div>
+        <div class="bg-black black-23"></div>
+        <div class="bg-black black-24"></div>
+        <div class="bg-white white-line-1"></div>
+        <div class="bg-white white-line-2"></div>
+        <div class="bg-white white-line-3"></div>
+    </main>
+</body>
+</html>
