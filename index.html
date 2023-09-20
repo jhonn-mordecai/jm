@@ -11,113 +11,187 @@
 		
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" href="favicon.png" />
-		
-		<!-- Font Awesome CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
-		<!-- My perfect and airtight CSS -->
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="css/f-a-4.7/css/font-awesome.min.css">
+		<!-- My CSS -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
+
 	<body>	
-		<div class="container">
-			<div class="main-grid">
-				<header class="grid-left">
-					<div class="flex-column">
-						<section class="about-me">
-							<h1>John<br class="breaker" /> Mordecai</h1>
-							<p class="title-sub">Web developer.</p>
-							<p class="desc">I develop for the front and back ends, and design for various digital means. I currently push pixels for the University of New Haven, and for CHERISH. In past lives I've been a touring musician, journalist, and novice digital designer (I'm still all those things at least a fraction of the time).</p>
-							<p>Take a look at some of my projects, then get in touch if you'd like.</p>
-						</section>
-						
-						<section class="info-links">
-							<div class="footer-links">
-								<a href="https://www.linkedin.com/in/john-mordecai" title="LinkedIn" target="_blank">
-									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-								</a>
-		
-								<a href="https://github.com/jhonn-mordecai/" title="GitHub" target="_blank">
-									<i class="fa fa-github" aria-hidden="true"></i>
-								</a>
-
-								<a href="mailto:john@johnmordecai.com" title="Email me">
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</a>
-							</div>	
-						</section>
+		<header>
+			<div class="container">
+				<nav class="nav-links flex-header">
+					<div class="header-logo">
+						<a href="#" title="Back to top" class="logo-img-link">
+							<span class="img-container">
+								<img src="img/avatar.jpg" alt="JM avatar" class="logo-img" loading="lazy">
+							</span>
+						</a>
 					</div>
-				</header>
-				
-				<main class="grid-right">
-					<div class="flex-column">
-						<section class="projects">
-							<div class="projects-grid">
-								<article class="project">
-									<h3>Which Bowie Album?</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestiae architecto, nobis vel perferendis, cupiditate earum a aut necessitatibus quas esse. Omnis praesentium mollitia labore.</p>
-									<div class="project-links">
-										<a href="" title="" class="btn btn-solid project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Go There</a>
-										<a href="https://github.com/jhonn-mordecai/bowie-albums" title="View Code on GitHub" class="btn btn-outline git-link" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> View Source Code</a>
-									</div>
-								</article>
-								<article class="project">
-									<h3>Concert Log</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestiae architecto, nobis vel perferendis, cupiditate earum a aut necessitatibus quas esse. Omnis praesentium mollitia labore.</p>
-									<div class="project-links">
-										<a href="" title="" class="btn btn-solid project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Go There</a>
-										<a href="https://github.com/jhonn-mordecai/concerts" title="View Code on GitHub" class="btn btn-outline git-link" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> View Source Code</a>
-									</div>
-								</article>
-								<article class="project">
-									<h3>NIGHT</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestiae architecto, nobis vel perferendis, cupiditate earum a aut necessitatibus quas esse. Omnis praesentium mollitia labore.</p>
-									<div class="project-links">
-										<a href="" title="" class="btn btn-solid project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Go There</a>
-										<a href="https://github.com/jhonn-mordecai/night-newhaven" class="btn btn-outline git-link" title="View Code on GitHub" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> View Source Code</a>
-									</div>
-								</article>
-								<article class="project">
-									<h3>Meg Powers Design</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestiae architecto, nobis vel perferendis, cupiditate earum a aut necessitatibus quas esse. Omnis praesentium mollitia labore.</p>
-									<div class="project-links">
-										<a href="" title="" class="btn btn-solid project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Go There</a>
-										<a href="" class="btn btn-outline git-link" title="View Code on GitHub" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> View Source Code</a>
-									</div>
-								</article>
-								<!-- <details>
-									<summary>Odds 'n Sods</summary>
-									<div class="details-inner">
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa error adipisci voluptates temporibus repellendus.</p>
-									</div>
-								</details> -->
-							</div>
-						</section>
+					<a href="" class="toggle-mobile-menu" aria-expanded="false" role="button">
+						<span class="sr-only">Toggle Mobile Menu</span>
+						<i class="menu-toggle-icon fa fa-bars" aria-hidden="true"></i>
+					</a>
+					<div class="nav-right">
+						<a href="#projects" class="scroll-link nav-link" title="View projects" role="button">Projects</a>
+						<!-- <a href="john_mordecai_resume.pdf" title="Open Resume" target="_blank">Resumé</a> -->
+						<a href="#about-contact" class="scroll-link nav-link" title="Contact me">About + Contact</a>
 					</div>
-				</main>
-
-				<!-- Single column/mobile footer -->
-				<footer class="single-column info-links">
-					<div class="footer-links">
-						<a href="https://www.linkedin.com/in/john-mordecai" title="LinkedIn" target="_blank">
-							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-						</a>
-	
-						<a href="https://github.com/jhonn-mordecai/" title="GitHub" target="_blank">
-							<i class="fa fa-github" aria-hidden="true"></i>
-						</a>
-
-						<a href="mailto:john@johnmordecai.com" title="Email me">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</a>
-					<div>		
-				</footer>
+				</nav>
 			</div>
-		</div>
+		</header>
+
+		<main>
+			<section class="top">
+				<section class="summary">
+					<h1>John<br class="breaker" /> Mordecai</h1>
+					<div>
+						<p>Front-/back-end web developer based in New Haven, CT. Take a look at some projects below, and <a href="#about-contact" class="scroll-link" title="Contact">get in touch</a> if you'd like.</p>
+					</div>
+				</section>
+			</section>
+
+			<section id="projects">
+				<div class="container">
+					<h2>Some projects</h2>
+					<div class="projects-grid">
+						<article class="project">
+							<div class="project-img">
+								<img src="https://via.placeholder.com/800x450.png" loading="lazy" alt="Site screenshot">
+							</div>
+							<div class="project-desc">
+								<h3>Which Bowie Album?</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestiae architecto, nobis vel perferendis, cupiditate earum a aut necessitatibus quas esse. Omnis praesentium mollitia labore.</p>
+								<div class="project-langs">
+									<span class="project-langs--css">SASS</span>
+									<span class="project-langs--javascript">JS</span>
+								</div>
+								<div class="project-links">
+									<a href="" title="" class="btn btn-solid project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Go There</a>
+									<a href="https://github.com/jhonn-mordecai/bowie-albums" title="View Code on GitHub" class="btn btn-outline git-link" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Source Code</a>
+								</div>
+							</div>
+						</article>
+						<article class="project">
+							<div class="project-img">
+								<img src="https://via.placeholder.com/800x450.png" loading="lazy" alt="Site screenshot">
+							</div>
+							<div class="project-desc">
+								<h3>Concert Log</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestiae architecto, nobis vel perferendis, cupiditate earum a aut necessitatibus quas esse. Omnis praesentium mollitia labore.</p>
+								<div class="project-langs">
+									<span class="project-langs--css">SASS</span>
+									<span class="project-langs--php">PHP</span>
+									<span class="project-langs--mysql">MySQL</span>
+									<span class="project-langs--javascript">JS</span>
+								</div>
+								<div class="project-links">
+									<a href="" title="Visit Site" class="btn btn-solid project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Go There</a>
+									<a href="https://github.com/jhonn-mordecai/concerts" title="View Code on GitHub" class="btn btn-outline git-link" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Source Code</a>
+								</div>
+							</div>
+						</article>
+						<article class="project">
+							<div class="project-img">
+								<img src="https://via.placeholder.com/800x450.png" loading="lazy" alt="Site screenshot">
+							</div>
+							<div class="project-desc">
+								<h3>NIGHT</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestiae architecto, nobis vel perferendis, cupiditate earum a aut necessitatibus quas esse. Omnis praesentium mollitia labore.</p>
+								<div class="project-langs">
+									<span class="project-langs--css">SASS</span>
+									<span class="project-langs--php">PHP</span>
+									<span class="project-langs--mysql">MySQL</span>
+									<span class="project-langs--smarty">Smarty</span>
+									<span class="project-langs--javascript">JS</span>
+								</div>
+								<div class="project-links">
+									<a href="" title="" class="btn btn-solid project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Go There</a>
+									<a href="https://github.com/jhonn-mordecai/night-newhaven" class="btn btn-outline git-link" title="View Code on GitHub" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Source Code</a>
+								</div>
+							</div>
+						</article>
+						<article class="project">
+							<div class="project-img">
+								<img src="https://via.placeholder.com/800x450.png" loading="lazy" alt="Site screenshot">
+							</div>
+							<div class="project-desc">
+								<h3>Meg Powers Design</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestiae architecto, nobis vel perferendis, cupiditate earum a aut necessitatibus quas esse. Omnis praesentium mollitia labore.</p>
+								<div class="project-langs">
+									<span class="project-langs--css">CSS</span>
+									<span class="project-langs--php">PHP</span>
+									<span class="project-langs--javascript">JS</span>
+								</div>
+								<div class="project-links">
+									<a href="" title="" class="btn btn-solid project-link">
+										<i class="fa fa-external-link" aria-hidden="true"></i> Go There
+									</a>
+									<a href="https://github.com/jhonn-mordecai/meg-powers" class="btn btn-outline git-link" title="View Code on GitHub" target="_blank">
+										<i class="fa fa-github" aria-hidden="true"></i> Source Code
+									</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="about-contact">
+				<div class="container">
+					<section class="about">
+						<h2>About me</h2>
+						<p>I currently push pixels full-time for the University of New Haven. In past lives I've been a touring musician, journalist, and novice digital designer (I'm still all those things at least a fraction of the time).</p>
+
+						<div class="contact-links">
+							<a href="https://github.com/jhonn-mordecai/" title="GitHub" target="_blank">
+								<span class="sr-only">GitHub profile</span><i class="fa fa-github" aria-hidden="true"></i>
+							</a>
 		
+							<a href="john_mordecai_resume.pdf" title="Open Resume" target="_blank" class="nav-link">
+								<span class="sr-only">Open resume</span><i class="fa fa-file-text-o" aria-hidden="true"></i>
+							</a>
+		
+							<a href="https://www.linkedin.com/in/john-mordecai" title="LinkedIn" target="_blank">
+								<span class="sr-only">LinkedIn Profile</span><i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+		
+							<a href="mailto:john@johnmordecai.com" title="Email me">
+								<span class="sr-only">Email me</span><i class="fa fa-envelope" aria-hidden="true"></i>
+							</a>
+						</div>
+					</section>
+
+					<section class="contact">
+						<h2>Contact me</h2>
+						<form id="email-form">
+							<input type="text" id="name" class="form-item" name="name" placeholder="Name" required>
+							<input type="email" id="email" class="form-item" name="email" placeholder="Email" required>
+							<textarea name="message" id="message" class="form-item" placeholder="Message" rows="6" cols="20"></textarea>
+							<button id="submitEmail" type="button" name="submit">Send</button>
+						</form>
+					</section>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="copyright">&copy;<span class="copyYear"></span> John Mordecai</div>
+		</footer>
+
+		<!-- EmailJS -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function(){
+				emailjs.init("24alFS8EU54bCBMzq");
+			})();
+		</script>
 		<!-- JS -->
 		<script src="js/scripts.js"></script>
 	</body>
