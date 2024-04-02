@@ -12,7 +12,6 @@
 
 /*linear-gradient(35deg, transparent, var(--red) 5%, var(--purple) 10%, var(--red), transparent 99%);*/
 
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -34,12 +33,12 @@
 }
 
 html {
+  font-size:18px;
   scroll-behavior:smooth;
   scroll-padding: var(--scroll-padding, 5.3rem);
 }
 
 body {
-  font-size:18px;
   font-family:'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color:var(--off-white);
   font-weight:200;
@@ -62,19 +61,63 @@ p:last-child {
 }
 
 .page-container {
-  width:min(1200px, 100% - 4rem);
-  margin-inline:auto;
   transition: height 0.2s linear;
 }
 
 .main-grid {
   display:grid;
   gap:2rem;
+  width:min(1200px, 100% - 4rem);
+  margin-inline:auto;
+}
+
+header {grid-area: header;}
+main {grid-area:main;}
+footer {grid-area:footer;}
+
+h1 {
+  font-size:3.2rem;
+  font-weight:200;
+  margin-bottom:1.8rem;
+  line-height:1.2;
 }
 
 #email-form {
   display:grid;
   gap:1rem;
+}
+
+#projects {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+  gap:1.2rem;
+}
+
+.proj-btn {
+  min-height:9rem;
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-end;
+  border:1px solid var(--off-white);
+  padding:1rem;
+  line-height:1;
+  transition:0.3s;
+}
+
+main h2 {
+  padding-bottom:0.8rem;
+  margin-bottom:2rem;
+  border-bottom:1px solid var(--off-white);
+  text-align:right;
+  text-transform:uppercase;
+  font-size:1.4rem;
+}
+
+.proj-btn:hover {
+  cursor:pointer;
+  justify-content:center;
+  align-items:center;
+  transition:0.3s;
 }
 
 .form-item {
@@ -95,7 +138,39 @@ p:last-child {
   }
 
   .main-grid {
-    grid-template-columns:repeat(2, 1fr);
+    /* grid-template-columns:repeat(2, 1fr); */
+    grid-template-columns:0.8fr 1fr;
+    grid-template-areas: ". main" 
+                        "header main"
+                        "footer main";
+  }
+
+  header {
+    padding-right:5rem;
   }
   
+  header p {
+    font-size:0.9rem;
+    line-height:1.8;
+  }
+  header h1 {
+    font-size:3rem;
+  }
+}
+
+@media (max-width:990px) {
+  
+  .page-container {
+    padding-block:4rem;
+  }
+  .main-grid {
+    grid-template-areas: "header" "main" "footer";
+    max-width:675px;
+  }
+
+  h1 {
+    font-size:clamp(3rem, 7vw, 5rem);
+    margin-bottom:2rem;
+  }
+
 }
