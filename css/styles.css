@@ -40,6 +40,11 @@ body {
   align-items:center;
 }
 
+::selection {
+  color:var(--dk-gray);
+  background: var(--off-white);
+}
+
 a {transition:0.2s;}
 
 a:focus:not(:active) {
