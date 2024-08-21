@@ -35,9 +35,8 @@ body {
   background: linear-gradient(190deg, var(--dk-gray), var(--dk-gray-3) 60%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#19191c",endColorstr="#131313",GradientType=1);
   padding:1rem;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display:grid;
+  place-items: center;
 }
 
 ::selection {
@@ -72,10 +71,9 @@ h1 {
   border-bottom:1px solid var(--off-white);
 }
 
-.intro-container {
+main {
   width:min(390px, 100%);
   padding-inline:1rem;
-  margin-inline:auto;
 }
 
 .intro-container p,
